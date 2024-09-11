@@ -5,7 +5,7 @@ This GitHub action auto-approves a pull request if it has less than the amount o
 ## Example usage
 
 ```yaml
-name: Autoapproval
+name: Autoapprove small PR
 
 on:
   pull_request:
@@ -15,13 +15,11 @@ on:
 
 jobs:
   autoapprove:
-    name: Check for possible autoapproval
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
     steps:
-      - name: Autoapprove if needed
-        uses: prryplatypus/autoapprove-small-pr@v1.0.0
+      - uses: prryplatypus/autoapprove-small-pr@v1.0.0
         if: '! github.event.pull_request.draft'
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
