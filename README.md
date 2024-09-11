@@ -1,6 +1,6 @@
-# Autoapprove small PRs
+# Autoapprove small PR
 
-This GitHub action auto-approves pull requests that have less than the amount of lines changed that you specify. To calculate the diff size, it adds the number of lines added and removed together.
+This GitHub action auto-approves the pull request if it has less than the amount of lines changed that you specify. To calculate the diff size, it sums up the number of lines added and removed.
 
 ## Example usage
 
