@@ -21,7 +21,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Autoapprove if needed
-        uses: prryplatypus/autoapprove-small-pr@v1
+        uses: prryplatypus/autoapprove-small-pr@v1.0.0
         if: '! github.event.pull_request.draft'
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
