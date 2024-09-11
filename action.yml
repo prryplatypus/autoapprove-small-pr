@@ -1,6 +1,9 @@
 name: Autoapprove small PR
 description: Autoapprove a PR if its diff smaller than given
 author: prryplatypus
+branding:
+  icon: check-circle
+  color: green
 
 inputs:
   github-token:
