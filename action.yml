@@ -1,0 +1,15 @@
+name: Autoapprove small PR
+description: Autoapprove a PR if its diff smaller than given
+author: prryplatypus
+
+inputs:
+  github-token:
+    description: 'GitHub token'
+    required: true
+  max-diff-size:
+    description: Maximum diff size above which the PR will not be autoapproved
+    required: true
+
+runs:
+  using: docker
+  image: Dockerfile
